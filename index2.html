@@ -5,9 +5,7 @@
   <meta charSet="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
   <style>
     html {
       font-size: 16px;
@@ -18,17 +16,14 @@
     }
 
     body {
-      margin: 0
+      margin: 0;
+      background-image: url("linen.png");
+      
     }
 
-    
     .title,
     h1,
     h2,
-    h3,
-    h4,
-    h5,
-    h6,
     nav a {
       font-family: Poiret One, cursive
     }
@@ -137,19 +132,56 @@
       font-size: 1.25em
     }
 
-    .button1 {
-  background-color: #03ACEF;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 21px;
-  margin: 4px 2px;
-  font-family: Poiret One;
-  cursor: pointer;
-}
+        .overlay {
+      height: 0%;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0, 0.9);
+      overflow-y: hidden;
+      transition: 0.5s;
+    }
+
+    .overlay-content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1;
+    }
+
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .overlay {overflow-y: auto;}
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+      }
+    }
     
   </style>
   
@@ -158,14 +190,27 @@
 
 <body>
     <div style="outline:none" tabindex="-1" role="group">
-      <div id="page">
-        <center><a class = "button1" href="https://sachinkrb.github.io/" ><b>Back to Main Page</b></a>
-          <a class = "button1" href="Sachin's Resume.pdf" download><b>Download PDF version</b></a>
+      <div id="page"> 
 
-        </center>
         
-        <main id="container">
-          <div class="resume-frame-1">
+       <main id="container">
+
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="">RESUME</a>
+            <a href="#">HOME</a>
+            <a href="#">DOWNLOAD PDF VERSION</a>
+            <a href="#" onclick="viewSource()">VIEW PAGE SOURCE</a>
+            <a href="#">WORDPRESS PROJECT</a>
+            <a href="#">MY GITHUB</a>
+          </div>
+        </div>
+
+        <span style="font-size:30px; color: #03ACEF; cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+
+
+      <div class="resume-frame-1">
             <header>
               <h1>Sachin R.</h1>
               <h1>sachink.rb@gmail.com</h1>
@@ -373,6 +418,29 @@
         </main>
       </div>
     </div>
-      
+  
+    <script>
+          function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+          }
 
+          function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+          }
+        </script>
+        <script >
+        function viewSource(){;
+    var source = "<html>";
+    source += document.getElementsByTagName('html')[0].innerHTML;
+    source += "</html>";
+    source = source.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    source = "<pre>"+source+"</pre>";
+    sourceWindow = window.open('','index2.html','height=800,width=800,scrollbars=1,resizable=1');
+    sourceWindow.document.write(source);
+    sourceWindow.document.close(); 
+    if(window.focus) sourceWindow.focus();
+}  
+      </script>
+
+</body>
 </html>
