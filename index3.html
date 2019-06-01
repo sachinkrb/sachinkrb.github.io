@@ -10,13 +10,6 @@
   box-sizing: border-box;
 }
 
-/*
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Orbitron', sans-serif;
-    font-family: 'Poiret One', cursive;
-*/
-
-
 /* Style the body */
 body {
   margin: 0;
@@ -53,11 +46,11 @@ body {
 }
 	
 h2 {
-	font-family: Poiret One;
+	font-family: 'Poiret One', cursive;
 	font-size: 1.95em;
 }
 h5 {
-	font-family: Poiret One;
+	font-family: 'Poiret One', cursive;
 	font-size: 1em;
 }
 
@@ -83,6 +76,9 @@ p {
   text-decoration: none;
 }
 
+.navbar .icon {
+  display: none;
+}
 
 /* Right-aligned link */
 .navbar a.right {
@@ -99,6 +95,37 @@ p {
 .navbar a.active {
   background-color: #666;
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a {
+    display: none;
+  }
+  .navbar a.icon {
+    float: left;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navbar .responsive {float: none;}
+  .navbar .responsive {position: relative;}
+  .navbar .responsive {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }
 
 
@@ -135,7 +162,7 @@ background-image: url("images/debut_light.png");
   height:50%;
   padding: 20px;
 }
-.responsive{
+.responsive-pic{
 	border-radius: 5%;
 	max-width: 100%;
 	height: auto;
@@ -171,9 +198,9 @@ background-image: url("images/debut_light.png");
   <h2>[ COOL NEWS BASED ON FACTS ]</h2>
 </div>
 
-<div class="navbar">
+<div class="navbar" id="myNavbar">
 
-  <a class="active" href="javascript:void(0)">HOME  </a>
+  <a href="javascript:void(0)">HOME  </a>
   <a href="javascript:void(0)">POLITICS</a>
   <a href="javascript:void(0)">SPORTS</a>
   <a href="javascript:void(0)">TECHNOLOGY</a>
@@ -181,8 +208,9 @@ background-image: url("images/debut_light.png");
   <a href="javascript:void(0)">WEATHER</a>
   <a href="javascript:void(0)">TRAFFIC</a>
   <a href="javascript:void(0)">DEALS</a>
-    <a href="javascript:void(0)">HOW TOs</a>
+   <a href="javascript:void(0)">HOW TOs</a>
   <a href="javascript:void(0)">CONTACT US</a>
+  <a href="javascript:void(0);" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
 
@@ -190,17 +218,18 @@ background-image: url("images/debut_light.png");
   <div class="side">
     <h2>List of Handpicked Photos</h2>
     <h5>Photo of the Day | Photo Credit: Jane Doe</h5>
-   	<img src="images/gadget2.webp" class="responsive" width="500" height="auto"  />
-
+   	<img src="images/gadget2.webp" class="responsive-pic" width="500" height="auto"  />
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    tempor incididunt labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. </p>
+    consequat. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat.</p>
     <h2>Slideshow : Best Pictures of this week!</h2>
     <p>Lorem ipsum dolor sit ame.</p>
-    <img src="images/gadget1.webp" class="responsive" width="500" height="auto"  /><br>
-   <img src="images/gadget2.webp" class="responsive" width="500" height="auto"  /><br>
-    <img src="images/crossings1.webp" class="responsive" width="500" height="auto"  />
+    <img src="images/gadget1.webp" class="responsive-pic" width="500" height="auto"  /><br>
+   <img src="images/gadget2.webp" class="responsive-pic" width="500" height="auto"  /><br>
+    <img src="images/crossings1.webp" class="responsive-pic" width="500" height="auto"  />
   </div>
   <div class="main">
     <h2>TITLE HEADING</h2>
@@ -234,8 +263,16 @@ background-image: url("images/debut_light.png");
 <div class="footer">
   <h2>Footer Coming soon!</h2>
 </div>
-
-
+<script>
+function myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
 </script>
+
 </body>
 </html>
