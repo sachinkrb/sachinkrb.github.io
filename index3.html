@@ -98,7 +98,8 @@ p {
   color: white;
 }
 
-@media screen and (max-width: 769px) {
+@media only screen and (device-width: 768px),
+       only screen and (max-width: 768px) {
   .navbar a {
     display: none;
   }
@@ -108,7 +109,8 @@ p {
   }
 }
 
-@media screen and (max-width: 769px) {
+@media only screen and (device-width: 768px),
+       only screen and (max-width: 768px) {
   .navbar.responsive {position: relative;}
   .navbar.responsive .icon{
     position: absolute;
@@ -165,7 +167,7 @@ background-image: url("images/debut_light.png");
 }
 
 .responsive-pic{
-	border-radius: 5%;
+	border-radius: 4%;
 	max-width: 100%;
 	height: auto;
 	float: right;
@@ -188,7 +190,8 @@ background-image: url("images/debut_light.png");
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 769px) {
+@media only screen and (device-width: 768px),
+       only screen and (max-width: 768px) {
   .row {   
     flex-direction: column;
   }
@@ -271,7 +274,7 @@ background-image: url("images/debut_light.png");
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <h2>Slideshow : Best Pictures of this week!</h2>
     <p>Lorem ipsum dolor sit ame.</p>
-    <img src="images/gadget1.webp" class="responsive-pic" width="500" height="auto"  /><br>
+    <img src="images/human1.webp" class="responsive-pic" width="500" height="auto"  /><br>
   
   </div>
   <div class="main">
