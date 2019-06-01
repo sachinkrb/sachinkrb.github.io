@@ -36,7 +36,7 @@ body {
 .header h1 {
   font-size:4em;
   color: #F9F9F9;
-   -webkit-text-fill-color:  #F9F9F9; /* Will override color (regardless of order) */
+  -webkit-text-fill-color:  #F9F9F9; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   text-shadow:
@@ -75,7 +75,7 @@ p {
 
 /* Style the navigation bar links */
 .navbar a {
-	float: left;
+  float: left;
   display: block;
   color: white;
   text-align: center;
@@ -135,10 +135,11 @@ background-image: url("images/debut_light.png");
   height:50%;
   padding: 20px;
 }
-.fakeimg1 {
-	background-image: url("images/gadget2.webp");
-	 width: 100%;
-  height:50%;
+.responsive{
+	border-radius: 5%;
+	max-width: 100%;
+	height: auto;
+
 }
 
 /* Footer */
@@ -187,15 +188,19 @@ background-image: url("images/debut_light.png");
 
 <div class="row">
   <div class="side">
-    <h2 style="font-family: Poiret One;">List of Handpicked Photos</h2>
+    <h2>List of Handpicked Photos</h2>
     <h5>Photo of the Day | Photo Credit: Jane Doe</h5>
-    <div class="fakeimg1"></div>
-    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    <h3>More Text</h3>
+   	<img src="images/gadget2.webp" class="responsive" width="500" height="auto"  />
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. </p>
+    <h2>Slideshow : Best Pictures of this week!</h2>
     <p>Lorem ipsum dolor sit ame.</p>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div>
+    <img src="images/gadget1.webp" class="responsive" width="500" height="auto"  /><br>
+   <img src="images/gadget2.webp" class="responsive" width="500" height="auto"  /><br>
+    <img src="images/crossings1.webp" class="responsive" width="500" height="auto"  />
   </div>
   <div class="main">
     <h2>TITLE HEADING</h2>
