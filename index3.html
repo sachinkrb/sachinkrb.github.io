@@ -133,7 +133,6 @@ p {
 }
 
 
-/* Column container */
 .row {  
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -143,8 +142,6 @@ p {
 
 }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
 .side {
   -ms-flex: 30%; /* IE10 */
   flex: 30%;
@@ -152,14 +149,12 @@ background-image: url("images/debut_light.png");
   padding: 20px;
 }
 
-/* Main column */
 .main {   
   -ms-flex: 70%; /* IE10 */
   flex: 70%; 
   padding: 20px;
 }
 
-/* Fake image, just for this example */
 .fakeimg {
   width: 100%;
   height:50%;
@@ -181,7 +176,23 @@ background-image: url("images/debut_light.png");
 
 }
 
-/* Footer */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius:85%;
+}
+
+
 .footer {
   background: #ddd;
   text-align: center;
@@ -189,7 +200,7 @@ background-image: url("images/debut_light.png");
   padding-bottom: 5px;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+
 @media only screen and (device-width: 768px),
        only screen and (max-width: 768px) {
   .row {   
@@ -384,6 +395,7 @@ background-image: url("images/debut_light.png");
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
 </div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
 
 <footer>
 <div class="footer">
@@ -403,6 +415,24 @@ function myFunction() {
   } else {
     x.className = "navbar";
   }
+}
+</script>
+<script>
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 </script>
 
