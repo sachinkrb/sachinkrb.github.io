@@ -1,0 +1,284 @@
+body {
+  max-width: 80%;
+  margin: auto;
+  background-image: url("/img/wavy-dots.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+
+
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1em;
+      grid-template-areas:
+    'header header header header header header'
+    'navbar navbar navbar navbar navbar navbar'
+    'section section section section section section'
+    'left left middle middle right right'
+    'footer footer footer footer footer footer';
+
+
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 11;
+  border: 0.12em double gold;
+  -webkit-box-shadow: -0.3px 0.3em 0.3em pink;
+          box-shadow: -0.3px 0.3em 0.3em pink;
+  border-radius: 1em;
+  text-align: center;
+  grid-area: header;
+  margin: 1em 0.0em 0.0em;
+  text-shadow: 0.1em 0.1em 0.06em pink;
+  font-size: 2.5em;
+  font-family: 'Great Vibes', cursive;
+  -webkit-font-kerning: auto;
+          font-kerning: auto;
+  background:
+    -webkit-radial-gradient(black 3px, transparent 4px),
+    -webkit-radial-gradient(black 3px, transparent 4px),
+    -webkit-linear-gradient(#fff 4px, transparent 0),
+    -webkit-linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    -webkit-linear-gradient(135deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+  background:
+    -o-radial-gradient(black 3px, transparent 4px),
+    -o-radial-gradient(black 3px, transparent 4px),
+    -o-linear-gradient(#fff 4px, transparent 0),
+    -o-linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    -o-linear-gradient(135deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+  background:
+    radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+  background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+
+}
+
+.navbar {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 11;
+  grid-area: navbar;
+  border: 0.25em double gold;
+  -webkit-box-shadow: -0.3px 0.3em 0.3em pink;
+          box-shadow: -0.3px 0.3em 0.3em pink;
+  border-radius: 1em;
+  font-family: 'Great Vibes', cursive;
+  font-stretch: expanded;
+
+  background:
+    -webkit-radial-gradient(black 3px, transparent 4px),
+    -webkit-radial-gradient(black 3px, transparent 4px),
+    -webkit-linear-gradient(#fff 4px, transparent 0),
+    -webkit-linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    -webkit-linear-gradient(135deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+  background:
+    -o-radial-gradient(black 3px, transparent 4px),
+    -o-radial-gradient(black 3px, transparent 4px),
+    -o-linear-gradient(#fff 4px, transparent 0),
+    -o-linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    -o-linear-gradient(135deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+  background:
+    radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+  background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+
+}
+
+#main_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+
+}
+
+#main_nav a {
+  font-size: 1.9em;
+  text-decoration: none;
+  color: black;
+  padding: 0.2em 1.5em;
+  border-radius: 1em;
+  border: 0.15em double gold;
+  -webkit-box-shadow: 0.1em 0.1em 0.5em pink;
+          box-shadow: 0.1em 0.1em 0.5em pink;
+  background-color: white;
+
+}
+
+
+.section,
+.left,
+.middle,
+.right {
+  border: 0.3em double gold;
+  -webkit-box-shadow: -0.27px 0.3em 0.3em pink;
+          box-shadow: -0.27px 0.3em 0.3em pink;
+  border-radius: 1em;
+  overflow: hidden;
+  padding: 1.1em;
+  background:
+    -webkit-radial-gradient(black 3px, transparent 4px),
+    -webkit-radial-gradient(black 3px, transparent 4px),
+    -webkit-linear-gradient(#fff 4px, transparent 0),
+    -webkit-linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    -webkit-linear-gradient(135deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+  background:
+    -o-radial-gradient(black 3px, transparent 4px),
+    -o-radial-gradient(black 3px, transparent 4px),
+    -o-linear-gradient(#fff 4px, transparent 0),
+    -o-linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    -o-linear-gradient(135deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+  background:
+    radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+  background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+
+
+}
+
+
+.left {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: left;
+
+
+}
+
+.left-1 {}
+
+.left-2 {}
+
+.middle {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-area: middle;
+}
+
+.middle-1 {}
+
+.middle-2 {}
+
+.right {
+
+  -ms-grid-row: 5;
+
+  -ms-grid-column: 9;
+
+  -ms-grid-column-span: 3;
+
+  grid-area: right;
+}
+
+.right-1 {}
+
+.right-2 {}
+
+.section {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 11;
+  grid-area: section;
+
+}
+.row {
+  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: white;
+
+
+}
+.column {
+padding: 0.5em;
+text-align: justify;
+font-family: "Gruppo", cursive;
+font-size: 1.2em;
+border:0.2em double gold;
+}
+.column::before , .column::after {
+  content:' "';
+  font-size: 1em;
+  color:gold;
+}
+.footer {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 11;
+  grid-area: footer;
+  border: 0.3em double gold;
+  -webkit-box-shadow: -0.27px 0.3em 0.3em pink;
+          box-shadow: -0.27px 0.3em 0.3em pink;
+  border-radius: 1em;
+  overflow: hidden;
+  margin: 0.0em 0.0em 1em;
+  padding: 5em;
+  background:
+    -webkit-radial-gradient(black 3px, transparent 4px),
+    -webkit-radial-gradient(black 3px, transparent 4px),
+    -webkit-linear-gradient(#fff 4px, transparent 0),
+    -webkit-linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    -webkit-linear-gradient(135deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+  background:
+    -o-radial-gradient(black 3px, transparent 4px),
+    -o-radial-gradient(black 3px, transparent 4px),
+    -o-linear-gradient(#fff 4px, transparent 0),
+    -o-linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    -o-linear-gradient(135deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+  background:
+    radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+  background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+
+ img {
+  border:0.2em double gold;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.0em 2em;
+  -webkit-box-shadow: 0.5em 0.5em 0.5em pink;
+          box-shadow: 0.5em 0.5em 0.5em pink;
+
+
+
+}
