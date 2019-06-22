@@ -10,7 +10,7 @@ body {
   display: -ms-grid;
   display: grid;
   grid-gap: 1em;
-      grid-template-areas:
+  grid-template-areas:
     'header header header header header header'
     'navbar navbar navbar navbar navbar navbar'
     'section section section section section section'
@@ -26,7 +26,7 @@ body {
   -ms-grid-column-span: 11;
   border: 0.12em double gold;
   -webkit-box-shadow: -0.3px 0.3em 0.3em pink;
-          box-shadow: -0.3px 0.3em 0.3em pink;
+  box-shadow: -0.3px 0.3em 0.3em pink;
   border-radius: 1em;
   text-align: center;
   grid-area: header;
@@ -35,7 +35,7 @@ body {
   font-size: 2.5em;
   font-family: 'Great Vibes', cursive;
   -webkit-font-kerning: auto;
-          font-kerning: auto;
+  font-kerning: auto;
   background:
     -webkit-radial-gradient(black 3px, transparent 4px),
     -webkit-radial-gradient(black 3px, transparent 4px),
@@ -70,13 +70,13 @@ body {
   grid-area: navbar;
   border: 0.26em double gold;
   -webkit-box-shadow: -0.3px 0.3em 0.3em pink;
-          box-shadow: -0.3px 0.3em 0.3em pink;
+  box-shadow: -0.3px 0.3em 0.3em pink;
   border-radius: 1em;
   font-family: 'Great Vibes', cursive;
   overflow: hidden;
   position: sticky;
-        position: -webkit-sticky;
-        top: 0;    
+  position: -webkit-sticky;
+  top: 0;
   background:
     -webkit-radial-gradient(black 3px, transparent 4px),
     -webkit-radial-gradient(black 3px, transparent 4px),
@@ -108,10 +108,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      padding-left: 0;
+  flex-wrap: wrap;
+  padding-left: 0;
 
 }
 
@@ -123,7 +123,7 @@ body {
   border-radius: 1em;
   border: 0.14em double gold;
   -webkit-box-shadow: 0.1em 0.1em 0.5em pink;
-          box-shadow: 0.1em 0.1em 0.5em pink;
+  box-shadow: 0.1em 0.1em 0.5em pink;
   background-color: white;
 
 }
@@ -135,7 +135,7 @@ body {
 .right {
   border: 0.3em double gold;
   -webkit-box-shadow: -0.27px 0.3em 0.3em pink;
-          box-shadow: -0.27px 0.3em 0.3em pink;
+  box-shadow: -0.27px 0.3em 0.3em pink;
   border-radius: 1em;
   overflow: hidden;
   padding: 1.1em;
@@ -213,29 +213,34 @@ body {
   grid-area: section;
 
 }
+
 .row {
-  
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   background-color: white;
 
 
 }
+
 .column {
-padding: 0.5em;
-text-align: justify;
-font-family: "Gruppo", cursive;
-font-size: 1.2em;
-border:0.2em double gold;
+  padding: 0.5em;
+  text-align: justify;
+  font-family: "Gruppo", cursive;
+  font-size: 1.2em;
+  border: 0.2em double gold;
 }
-.column::before , .column::after {
-  content:' "';
+
+.column::before,
+.column::after {
+  content: ' "';
   font-size: 1em;
-  color:gold;
+  color: gold;
 }
+
 .footer {
   -ms-grid-row: 9;
   -ms-grid-column: 1;
@@ -243,7 +248,7 @@ border:0.2em double gold;
   grid-area: footer;
   border: 0.3em double gold;
   -webkit-box-shadow: -0.27px 0.3em 0.3em pink;
-          box-shadow: -0.27px 0.3em 0.3em pink;
+  box-shadow: -0.27px 0.3em 0.3em pink;
   border-radius: 1em;
   overflow: hidden;
   margin: 0.0em 0.0em 3em;
@@ -273,27 +278,28 @@ border:0.2em double gold;
   background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
 }
 
- img {
-  border:0.2em double gold;
+img {
+  border: 0.2em double gold;
   width: 100%;
   height: 100%;
   border-radius: 0.0em 2em;
   -webkit-box-shadow: 0.5em 0.5em 0.5em pink;
-          box-shadow: 0.5em 0.5em 0.5em pink;
+  box-shadow: 0.5em 0.5em 0.5em pink;
 }
 
 @media screen and (max-width: 1350px) {
 
- #main_nav a{
-  display: block; 
-  text-align: center;
+  #main_nav a {
+    display: block;
+    text-align: center;
 
-}
-#main_nav {
-display: block;
-width:100%;
-margin: auto;
-padding: auto;
+  }
 
-}
+  #main_nav {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: auto;
+
+  }
 }
