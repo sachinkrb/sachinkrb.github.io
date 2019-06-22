@@ -21,7 +21,7 @@ body {
 .left,
 .middle,
 .right {
-  background:url("/img/light-veneer.png");
+  background:url("../img/light-veneer.png") repeat;
 }
 
 .header,
