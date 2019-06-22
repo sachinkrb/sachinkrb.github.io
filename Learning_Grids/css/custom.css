@@ -302,4 +302,27 @@ img {
     padding: auto;
 
   }
+
+  .navbar {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+
+    grid-template-areas:
+      'header header header header header header'
+      'navbar navbar navbar navbar navbar navbar'
+      'section section section section section section'
+      'left left left left left left'
+      'middle middle middle middle middle middle'
+      'right right right right right right'
+      'footer footer footer footer footer footer';
+  }
+
+  .row {
+    display: block;
+    width: 100%;
+  }
 }
