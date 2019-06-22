@@ -4,8 +4,6 @@ body {
   background-image: url("/img/wavy-dots.png");
   background-repeat: repeat;
   background-attachment: fixed;
-
-
 }
 
 .wrapper {
@@ -68,14 +66,17 @@ body {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 11;
+
   grid-area: navbar;
-  border: 0.25em double gold;
+  border: 0.26em double gold;
   -webkit-box-shadow: -0.3px 0.3em 0.3em pink;
           box-shadow: -0.3px 0.3em 0.3em pink;
   border-radius: 1em;
   font-family: 'Great Vibes', cursive;
-  font-stretch: expanded;
-
+  overflow: hidden;
+  position: sticky;
+        position: -webkit-sticky;
+        top: 0;    
   background:
     -webkit-radial-gradient(black 3px, transparent 4px),
     -webkit-radial-gradient(black 3px, transparent 4px),
@@ -110,6 +111,7 @@ body {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+      padding-left: 0;
 
 }
 
@@ -119,7 +121,7 @@ body {
   color: black;
   padding: 0.2em 1.5em;
   border-radius: 1em;
-  border: 0.15em double gold;
+  border: 0.14em double gold;
   -webkit-box-shadow: 0.1em 0.1em 0.5em pink;
           box-shadow: 0.1em 0.1em 0.5em pink;
   background-color: white;
@@ -244,7 +246,7 @@ border:0.2em double gold;
           box-shadow: -0.27px 0.3em 0.3em pink;
   border-radius: 1em;
   overflow: hidden;
-  margin: 0.0em 0.0em 1em;
+  margin: 0.0em 0.0em 3em;
   padding: 5em;
   background:
     -webkit-radial-gradient(black 3px, transparent 4px),
@@ -278,7 +280,20 @@ border:0.2em double gold;
   border-radius: 0.0em 2em;
   -webkit-box-shadow: 0.5em 0.5em 0.5em pink;
           box-shadow: 0.5em 0.5em 0.5em pink;
+}
 
+@media screen and (max-width: 1350px) {
 
+ #main_nav a{
+  display: block; 
+  text-align: center;
 
+}
+#main_nav {
+display: block;
+width:100%;
+margin: auto;
+padding: auto;
+
+}
 }
