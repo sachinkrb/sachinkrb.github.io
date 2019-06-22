@@ -1,8 +1,7 @@
 body {
-  max-width: 75%;
+  max-width: 86%;
   margin: auto;
   background-image: url("../img/wavy-dots.png");
-  background-repeat: repeat;
   background-attachment: fixed;
 }
 
@@ -22,7 +21,7 @@ body {
 .left,
 .middle,
 .right {
-  background: url("../img/light-veneer.png") repeat;
+  background: url("../img/light-veneer.png") ;
 }
 
 .header,
@@ -70,6 +69,7 @@ body {
   font-family: 'Great Vibes', cursive;
   -webkit-font-kerning: auto;
   font-kerning: auto;
+  overflow: hidden;
 }
 
 .navbar {
@@ -215,6 +215,7 @@ body {
   margin: 0.0em 0.0em 3em;
   text-align: center;
   padding: 1em;
+  overflow: hidden;
 }
 
 .footer .fa {
@@ -265,7 +266,7 @@ img {
 
   .navbar {
     position: static;
-    background: url("../img/light-veneer.png") repeat;
+    background: url("../img/light-veneer.png");
     padding: 0.5em;
   }
 
