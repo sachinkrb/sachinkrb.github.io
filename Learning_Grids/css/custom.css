@@ -1,5 +1,5 @@
 body {
-  max-width: 86%;
+  max-width: 80%;
   margin: auto;
   background-image: url("../img/wavy-dots.png");
   background-repeat: repeat;
@@ -217,14 +217,6 @@ body {
   padding: 1em;
 }
 
-
-/* .fa {
-  text-align: center;
-  text-decoration: none;
-  font-size: 7em;
-  padding: 3em;
-  margin: 0.1em;
-}*/
 .footer .fa {
   padding: 0.5em;
   font-size: 1.5em;
@@ -232,8 +224,8 @@ body {
   text-decoration: none;
   margin: 0.1em 0.1em;
   background: white;
-  color:black;
-  border:0.05em double gold;
+  color: black;
+  border: 0.05em double gold;
   border-radius: 0.5em;
   -webkit-box-shadow: -0.27px 0.3em 0.3em pink;
   box-shadow: -0.27px 0.3em 0.3em pink;
@@ -244,8 +236,8 @@ body {
   font-family: Gruppo, 'cursive';
   font-weight: 900;
   text-align: center;
-  padding:0em;
-  
+  padding: 0em;
+
 }
 
 img {
@@ -277,11 +269,6 @@ img {
     padding: 0.5em;
   }
 
-  /*.section, .left, .right, .middle{
-   background:  none;
-  }*/
-
-}
 
 @media screen and (max-width: 800px) {
   .wrapper {
