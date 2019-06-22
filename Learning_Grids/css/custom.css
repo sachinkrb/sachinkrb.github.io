@@ -1,7 +1,7 @@
 body {
   max-width: 86%;
   margin: auto;
-  background-image: url("/img/wavy-dots.png");
+  background-image: url("../img/wavy-dots.png");
   background-repeat: repeat;
   background-attachment: fixed;
 }
@@ -237,7 +237,7 @@ img {
 
   .navbar {
     position: static;
-    background:url("/img/light-veneer.png");
+    background:url("../img/light-veneer.png");
   }
   /*.section, .left, .right, .middle{
    background:  none;
