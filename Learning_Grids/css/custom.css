@@ -17,11 +17,12 @@ body {
     'left left middle middle right right'
     'footer footer footer footer footer footer';
 }
+
 .section,
 .left,
 .middle,
 .right {
-  background:url("../img/light-veneer.png") repeat;
+  background: url("../img/light-veneer.png") repeat;
 }
 
 .header,
@@ -110,6 +111,10 @@ body {
   box-shadow: 0.1em 0.1em 0.5em pink;
   background-color: white;
 
+}
+
+#main_nav a:hover {
+  background-color: pink;
 }
 
 
@@ -207,9 +212,40 @@ body {
   -webkit-box-shadow: -0.27px 0.3em 0.3em pink;
   box-shadow: -0.27px 0.3em 0.3em pink;
   border-radius: 1em;
-  overflow: hidden;
   margin: 0.0em 0.0em 3em;
-  padding: 5em;
+  text-align: center;
+  padding: 1em;
+}
+
+
+/* .fa {
+  text-align: center;
+  text-decoration: none;
+  font-size: 7em;
+  padding: 3em;
+  margin: 0.1em;
+}*/
+.footer .fa {
+  padding: 0.5em;
+  font-size: 1.5em;
+  width: 1.5em;
+  text-decoration: none;
+  margin: 0.1em 0.1em;
+  background: white;
+  color:black;
+  border:0.05em double gold;
+  border-radius: 0.5em;
+  -webkit-box-shadow: -0.27px 0.3em 0.3em pink;
+  box-shadow: -0.27px 0.3em 0.3em pink;
+}
+
+.info-here p {
+  font-size: 1.5em;
+  font-family: Gruppo, 'cursive';
+  font-weight: 900;
+  text-align: center;
+  padding:0em;
+  
 }
 
 img {
@@ -237,8 +273,10 @@ img {
 
   .navbar {
     position: static;
-    background:url("../img/light-veneer.png");
+    background: url("../img/light-veneer.png") repeat;
+    padding: 0.5em;
   }
+
   /*.section, .left, .right, .middle{
    background:  none;
   }*/
