@@ -21,7 +21,7 @@ body {
 .left,
 .middle,
 .right {
-  background: url("../img/light-veneer.png") ;
+  background: url("../img/light-veneer.png");
 }
 
 .header,
@@ -81,7 +81,7 @@ body {
   -webkit-box-shadow: -0.3px 0.3em 0.3em pink;
   box-shadow: -0.3px 0.3em 0.3em pink;
   border-radius: 1em;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Gruppo', cursive;
   overflow: hidden;
   position: sticky;
   position: -webkit-sticky;
@@ -237,7 +237,9 @@ body {
   font-family: Gruppo, 'cursive';
   font-weight: 900;
   text-align: center;
-  padding: 0em;
+    padding: 0em;
+  text-shadow: 0.05em 0.05em gold;
+  word-wrap: break-word;
 
 }
 
@@ -271,21 +273,21 @@ img {
   }
 
 
-@media screen and (max-width: 800px) {
-  .wrapper {
+  @media screen and (max-width: 800px) {
+    .wrapper {
 
-    grid-template-areas:
-      'header header header header header header'
-      'navbar navbar navbar navbar navbar navbar'
-      'section section section section section section'
-      'left left left left left left'
-      'middle middle middle middle middle middle'
-      'right right right right right right'
-      'footer footer footer footer footer footer';
-  }
+      grid-template-areas:
+        'header header header header header header'
+        'navbar navbar navbar navbar navbar navbar'
+        'section section section section section section'
+        'left left left left left left'
+        'middle middle middle middle middle middle'
+        'right right right right right right'
+        'footer footer footer footer footer footer';
+    }
 
-  .row {
-    display: block;
-    width: 100%;
+    .row {
+      display: block;
+      width: 100%;
+    }
   }
-}
