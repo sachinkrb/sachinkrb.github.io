@@ -17,6 +17,7 @@ body {
     'footer footer footer footer footer footer';
 }
 
+/* Background pattern from Toptal Subtle Patterns */
 .section,
 .left,
 .middle,
@@ -237,7 +238,7 @@ body {
   font-family: Gruppo, 'cursive';
   font-weight: 900;
   text-align: center;
-    padding: 0em;
+  padding: 0em;
   text-shadow: 0.05em 0.05em gold;
   word-wrap: break-word;
 
